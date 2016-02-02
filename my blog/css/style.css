@@ -1,0 +1,60 @@
+*{
+	box-sizing: border-box;
+}
+h1{
+	font-size: 24px;
+	margin: 30px 0 10px 0;
+	color: #404040;
+}
+body{
+	background-color: #E5E5E5;
+	margin : 0;
+	padding: 0;
+}
+#main-menu a{
+	font-size: 20px;
+	color: #737373;
+	text-decoration: none;
+}
+#main-menu a:hover, #main-menu a.active{
+	color: black;
+
+}
+#main-menu a.active{
+	font-weight: bold;
+}
+img{
+	max-width:100%;
+}
+.box {
+	border : 1px solid #dddddd;
+	border-top-width: 5px;
+	float: left;
+    width: 33.33333333333%;
+    padding: 15px;
+    
+}
+.info{
+	border-color: #76a7fa;
+}
+.info span{
+	color: #76a7fa;
+}
+.contact{
+	border-color: #f9b256;
+
+}
+.contact span{
+	color:  #f9b256
+}
+.company{
+	border-color: #4dbfd9;
+
+}
+.company span{
+	color: #4dbfd9;
+}
+.wrap{
+	max-width: 1000px;
+	margin: auto;
+}

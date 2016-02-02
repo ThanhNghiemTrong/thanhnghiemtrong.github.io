@@ -1,0 +1,43 @@
+@keyframes title {
+    0%  {background-color: #EF7126; color: #F9E559;}
+    25%  {background-color: #6F3662; color: #FFFFFF;}
+    50%  {background-color: #9F6164; color: #F8DEBD;}
+    75%  {background-color: #44B3C2; color: #FFFFFF;}
+    100% {background-color: #218C8D; color: #F9E559;}
+}
+@keyframes text {
+	0% { opacity: 0; transform: translate(0,0);}
+	25%{opacity: 1;	transform:translate(-10px,0);}
+	50%{opacity: 1; transform: translate(-50%,0);}
+	75%{opacity: 0; transform: translate(-52%,0);}
+	100%{opacity: 0;}
+}
+
+h1{
+	
+	font-size: 80px;
+	text-align: center;
+	margin-top: 20px;
+	animation: title 5s ease infinite;
+
+}
+.all{
+	max-width: 1000px;
+	margin: auto;
+}
+img{
+	vertical-align: middle;
+	border-style: groove;
+    max-height: 172px;
+    width: 31%;
+    margin: 5px;
+    padding: 2px;
+    margin-bottom: 22px;
+    cursor: pointer;
+ }
+ #author{
+ 	font-size: 20px;
+ 	font-weight: bold;
+ 	text-align: right;
+ 	animation: text 5s ease infinite;
+ }

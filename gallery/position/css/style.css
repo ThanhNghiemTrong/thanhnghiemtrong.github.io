@@ -1,0 +1,95 @@
+*{
+	box-sizing :border-box;
+
+}
+h1{
+	font-size: 24px;
+	margin-top: 20px;
+	
+}
+
+img{
+	border-style: groove;
+    max-height: 172px;
+    width: 30%;
+    margin: 15px;
+    padding: 2px;
+    margin-bottom: 22px;
+}
+.all{
+	max-width: 1000px;
+	margin: auto;
+}
+.menu a {
+       font-size: 28px;
+    color: #737373;
+    text-decoration: none;
+    padding: 4px;
+    display: block;
+    width: 181px;
+    position: relative;
+    text-align: left;
+    top: -5px;
+    left: -4px;
+}
+.menu a:hover, .menu a.active{
+	color: black;
+	font-weight: bold;
+}
+.banner img{
+	float: none;
+	width: 1000px;
+	height: 300px;
+	margin: 0;
+	padding: 0;
+	border-style: none;
+};
+.row{
+	padding: 5px ;
+	height : 180px;
+}
+.row img:hover{
+border-radius:50%;
+}
+/*.menu > a:first-child{
+	padding: 4px;
+	background-color: #ffffff;
+	border-radius: 50%;
+
+}
+.menu >a:first-child >img{
+	max-width: 160px;
+	border-radius: 50%;
+
+}*/
+.menu img{
+
+	position: absolute;
+    float: none;
+    top: 137px;
+    left: 592px;
+    max-width: 160px;
+    border-radius: 50%;
+    border-color: darkgrey;
+}
+.menu{
+    padding: 15px 0;
+    border-bottom: 1px solid #dddddd;
+    height: 175px;
+}
+.back{
+    position: fixed;
+    right: 64px;
+    bottom: 15px;
+}
+.back img{
+	height: 48px;
+	width: 48px;
+	border-style: none;
+
+}
+.banner img{
+	width: 1000px;
+	height: 300px;
+	margin:0;
+}

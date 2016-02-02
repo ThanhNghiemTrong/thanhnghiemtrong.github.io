@@ -1,0 +1,74 @@
+@keyframes title {
+    0%  {/*background-color: #EF7126;*/ color: #F9E559;}
+    25%  {/*background-color: #6F3662;*/ color: #FFFFFF;}
+    50%  {/*background-color: #9F6164;*/ color: #F9E559;}
+    75%  {/*background-color: #44B3C2;*/ color: #FFFFFF;}
+    100% {/*background-color: #218C8D;*/ color: #F9E559;}
+}
+@keyframes image {
+	0% { transform:scale(0.5,0.5);}
+	50% { transform:scale(0.75,0.75);}
+	75% { transform: scale(1,1);}
+	100% { transform: scale(0.75,0.75);}
+}
+@keyframes year {
+	0% { opacity: 1; transform: translate(0,0);}
+	25%{opacity: 1;	transform:translate(440px,0);}
+	50%{opacity: 1; transform: translate(-440px,0);}
+	75%{opacity: 1; transform: translate(0,0);transform:scale(1.5,1.5);}
+	100%{opacity: 0;transform: translate(0,0);}
+	}
+@keyframes note{
+	0%{opacity: 0;}
+	50%{opacity:1; color:black;}
+	75%{opacity:1; color: #F9E559;}
+	100%{opacity:0; color: black;}
+}
+.all{
+	background-color: red;
+	max-width: 1000px;
+	margin: auto;
+	text-align: center;
+}
+img{
+
+
+	width: 50%;
+	margin: auto;
+	border-style: groove;
+	padding: 2px;
+	border-color:#F9E559; 
+	animation: image 3s ease infinite;
+}
+.name{
+	color: #F9E559;
+	font-size: 28px;
+}
+h2{
+	animation:  title 3s ease infinite;
+}
+h1{
+	animation: year 3s ease infinite;
+}
+.menu{
+
+}
+#note1{
+	text-align: center;
+	font-size: 40px;
+	font-weight: bold;
+	padding-left: 60px;
+	float: left;
+	animation: note 3s ease infinite;
+
+}
+#note2{
+	text-align: center;
+	font-size: 40px;
+	font-weight: bold;
+	padding-right: 60px;
+	float: right;
+	animation: note 3s ease infinite;
+
+	
+}

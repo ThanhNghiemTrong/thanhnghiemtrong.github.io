@@ -57,29 +57,32 @@ h1{
     list-style: none;
     display:inline-block;
     font-size: 23px;
-    padding-right: 40px;
+    padding-right: 20px;
     padding-top: 10px;
     padding-bottom: 10px;
-   
+   	position: relative; 
+   	padding-left: 20px;
 
  }
-
-.menu ul ul{
+.menu ul li ul {
 	display: none;
 
 }
+.menu ul li ul li{
+	font-size: 20px;
+}
 .menu ul li:hover ul{
-display: table-caption;
-	position: absolute; 
-	margin-bottom: 30px;
-	left: 24%;
+	display: block;
 	background-color: #248283;
 	color: white;
+	position: absolute;
+	left: 0;
+	padding-left: 0;
+	
 }
-
  a:hover , #actived{
 	color: black;
-	font-weight: bold;
+
 
 }
 #actived {

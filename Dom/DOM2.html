@@ -1,0 +1,68 @@
+<html>
+<head>
+	<title>Caculator</title>
+	<meta charset="utf-8"/>
+	<style type="text/css">
+		#all{
+			max-width: 1000px;
+			text-align: center;
+			margin :auto;
+		}
+		input{
+			margin-top: 5px;
+			font-size: 30px;
+		}
+		h1{
+			font-size: 50px;
+			color: red;
+			margin-top: 50px;
+		}
+	</style>
+</head>
+<body>
+<div id="all">
+	<h1>CASIO</h1>
+	<form name="calculator" >
+	<input type="text" style="width: 363px;" name="result" value=""/><br><br>
+<div id="number">
+	<input type="button" value="1" onclick="document.calculator.result.value+='1'">
+	<input type="button" value="2" onclick="document.calculator.result.value+='2'">
+	<input type="button" value="3" onclick="document.calculator.result.value+='3'">
+	<input type="button" value="4" onclick="document.calculator.result.value+='4'">
+	<input type="button" value="5" onclick="document.calculator.result.value+='5'">
+	<input type="button" value="6" onclick="document.calculator.result.value+='6'">
+	<input type="button" value="7" onclick="document.calculator.result.value+='7'">
+	<input type="button" value="8" onclick="document.calculator.result.value+='8'">
+	<input type="button" value="9" onclick="document.calculator.result.value+='9'">
+	<input type="button" value="0" onclick="document.calculator.result.value+='0'">
+</div>
+<div id="tools">
+	<input type="button" value="+" onclick="document.calculator.result.value+='+'">
+	<input type="button" value="-" onclick="document.calculator.result.value+='-'">
+	<input type="button" value="*" onclick="document.calculator.result.value+='*'">
+	<input type="button" value="/" onclick="document.calculator.result.value+='/'">
+	<input type="button" value="&#178;" onclick="document.calculator.result.value= eval(
+	'document.calculator.result.value * document.calculator.result.value')">
+	<input type="button" value="&#189;" onclick="document.calculator.result.value= Math.sqrt(document.calculator.result.value)">
+	<input type="button" value="!" onclick="giaithua()">
+	<input type="button" value="=" onclick="document.calculator.result.value=eval(document.calculator.result.value)">
+	<input type="reset" value="Reset">
+	
+</div>
+</div>
+</form>
+<script>
+	function giaithua(){
+		var x= Number(document.calculator.result.value);
+		var result=1;
+
+		for(var i =1; i<=x; i++){
+			result= result*i;
+		}
+		document.calculator.result.value= result;
+		
+
+	}
+</script>
+</body>
+</html>

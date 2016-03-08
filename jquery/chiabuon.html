@@ -1,0 +1,58 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<style type="text/css">
+	@keyframes chucmung{
+	0%  {color: #F9E559; transform: scale(0.75,0.75);}
+    25%  {color: #FFFFFF;transform: scale(1,1);}
+    50%  {color: #F9E559;transform: scale(1.25,1.25);}
+    75%  {color: #FFFFFF;transform: scale(1,1);}
+    100% { color: #F9E559;transform: scale(1.25,1.25);}
+	} 
+	#all{
+		max-width: 1000px;
+		text-align: center;
+		margin: auto;
+
+	}
+	img{
+			margin-top: 30px;
+			max-height: 300px;
+			margin-bottom: 20px;
+		}
+	body{
+		
+		background-image: url("http://i608.photobucket.com/albums/tt162/onghoanghaigiang/stadium-flood-lights-backgrounds-for-powerpoint.jpg");
+	}
+	h1{
+		animation: chucmung 3s ease infinite;
+		text-align: center;
+		
+
+	}
+		input{
+			margin-left: 10px;
+			margin-top: 20px;
+			max-width: 500px;
+			border-radius: 15px;
+			font-size: 20px;
+			text-align: center;
+			font-weight: bold;
+			font-family: -webkit-pictograph
+		}
+			input:hover{
+			cursor: pointer;
+		}
+	</style>
+	<audio autoplay>
+		<source src="music.mp3" type="audio/mpeg">
+	</audio>
+</head>
+<body>
+	<div id="all">
+	<img src="http://i1244.photobucket.com/albums/gg571/gamehdpipo/Untitled-1-1.png">
+	<h1>Bạn đã trả lời sai 3 câu</h1>
+	<input type="button" value="Chơi lại" onclick="window.location.href='quiz.html'">
+	</div>
+</body>
+</html>

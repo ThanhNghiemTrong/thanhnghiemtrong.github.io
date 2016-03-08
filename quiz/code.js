@@ -49,14 +49,101 @@ var question= [
 			],
 			key : "Manchester United",
 		},
+			{
+			quiz : "Người ta thường nói thừa nước đục thả gì ",
+			choice:[
+				"Bom",
+				"Câu",
+				"Cá",
+				"Cơm",
+			],
+			key : "Câu",
+		},
+			{
+			quiz : "Câu nào sau đây chỉ người ở trạng thái mê man, không biết gì",
+			choice:[
+				"Bất tỉnh nhân sự",
+				"Bất đắc kì tử",
+				"Bất khả xâm phạm",
+				"Bất di bất dịch",
+			],
+			key : "Bất tỉnh nhân sự",
+		},
+		{
+			quiz : "Tổng bí thư Trung ương Đản cộng sản Việt Nam được bầu tại Đại hội XI là ai",
+			choice:[
+				"Nguyễn Tấn Dũng",
+				"Nguyễn Phú Trọng",
+				"Nguyễn Minh Triết",
+				"Trương Phú Sang",
+			],
+			key : "Nguyễn Phú Trọng",
+		},
+		{
+			quiz : "Đội tuyển bóng đá nam nào đã vô địch WC2014",
+			choice:[
+				"Đức",
+				"Anh",
+				"Pháp",
+				"Bra-xin",
+			],
+			key : "Đức",
+		},
+		{
+			quiz : "Euro 2016 được tổ chức ở đâu",
+			choice:[
+				"Nga",
+				"Pháp",
+				"Tây Ban Nha",
+				"Thuỵ Điển",
+			],
+			key : "Pháp",
+		},
+		{
+			quiz : ' Điền vào chỗ chấm "Vắt cổ ... ra nước"',
+			choice:[
+				"Chày",
+				"Tay",
+				"Chân",
+				"Chim",
+			],
+			key : "Chày",
+		},
+		{
+			quiz : ' Một con ngựa đau, cả tàu được ...',
+			choice:[
+				"Ăn thêm cỏ",
+				"Bỏ cỏ",
+				"Bỏ chạy",
+				"Thịt ngựa",
+			],
+			key : "Bỏ cỏ",
+		},
+
+
+
 	];
 	var i=0;
 	var dem=0;
+	var sai=0;
+	var audio=$("#track")[0];
+	var music=$("#track1")[0];
 	$("#all").append("<h1>"+ question[i].quiz+"</h1>");
 	for(var j=0; j<4; j++){
 		$("#all").append('<input type="button" value="'+ question[i].choice[j] +'">');
 
 	};
+	$("input").click(function(){
+	 	if(this.value==question[i].key){
+						dem++;
+						audio.play();
+					}
+		else{
+			music.play();
+			sai ++;
+		}
+
+	});
 
 $( "#all" ).delegate( "input", "click", function() {
 			if(i<question.length-1){
@@ -64,11 +151,19 @@ $( "#all" ).delegate( "input", "click", function() {
   			$("input").remove();
 			$("h1").replaceWith('<h1>'+question[i].quiz+'</h1>');
 			for(var j=0;j<4;j++){
-				$("#all").append('<input type="button" value="'+ question[i].choice[j] +'">')}
+				$("#all").append('<input type="button" style="" value="'+ question[i].choice[j] +'">')}
 					$("input").click(function(){
 					if(this.value==question[i].key){
 						dem++;
-					}
+						audio.play();
+					}else{
+						music.play();
+						sai ++;
+						if(sai==3){
+						window.location.href="chiabuon.html";
+						}
+
+					};
 				})
 			if(i==question.length-1){
 				if(this.value==question[i].key){

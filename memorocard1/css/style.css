@@ -1,0 +1,61 @@
+
+body{
+
+	background-image: url("background.jpg");
+
+}
+#card{
+	
+	float: left;
+	display: -webkit-inline-box;
+}
+
+.magic{
+	margin-top: 50px;
+	position: relative;
+	margin-left: 40px;
+	opacity: 0.8;
+	transition: transform 1s;
+	-webkit-transition: transform 1s;
+}
+.magic1{
+	position: relative;
+	margin-left: 20px;
+	margin-top: 20px;
+}
+.magic #back{
+	transform: rotateY(180deg);
+	position: absolute;
+	top:0;
+	left: 0;
+}
+.magic1 #back{
+	transform: rotateY(180deg);
+	position: absolute;
+	top:0;
+	left: 0;
+}
+.magic:hover{
+	opacity: 1;
+	cursor: pointer;
+	transform: translate3d(-20px,-30px,-30px);
+	-webkit-box-shadow: 18px 23px 44px -5px rgba(0,0,0,0.87);
+-moz-box-shadow: 18px 23px 44px -5px rgba(0,0,0,0.87);
+box-shadow: 18px 23px 44px -5px rgba(0,0,0,0.87);
+}
+
+.magic1 #back{
+	transform: rotateY(0deg);
+}
+
+.magic1 #front{
+	transform: rotateY(180deg);
+}
+.magic #back, .magic #front{
+	transition: all 0.5s;
+	backface-visibility:hidden;
+}
+.magic1 #back, .magic1 #front{
+	transition: all 0.5s;
+	backface-visibility:hidden;
+}

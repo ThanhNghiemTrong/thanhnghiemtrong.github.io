@@ -19,21 +19,30 @@ body{
 	float: left;
 }
 #card{
+	margin-top: 20px;
+	margin-left: 100px;
 	position: relative;
+	float: left;
+
+
 }
 
 
 .magic{
-	margin-top: 20px;
+	margin-top: 10px;
 	position: relative;
-	margin-left: 20px;
+	margin-left: 2px;
 	opacity: 0.8;
+	float: left;
+
 	
 }
 .magic1{
 	position: relative;
-	margin-left: 20px;
-	margin-top: 20px;
+	margin-left: 2px;
+	margin-top: 10px;
+	
+
 }
 .magic #back{
 	transform: rotateY(180deg);
@@ -50,7 +59,7 @@ body{
 .magic:hover{
 	opacity: 1;
 	cursor: pointer;
-	
+	transform: translate(0,-1px);
 
 }
 
@@ -70,4 +79,7 @@ body{
 .magic1 #back, .magic1 #front{
 	transition: all 0.5s;
 	backface-visibility:hidden;
+}
+.magic img{
+	width: 65%;
 }

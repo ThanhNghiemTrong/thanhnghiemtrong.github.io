@@ -24,10 +24,18 @@ var card=[
 		back: "img/back.jpg",
 		name: "f5"
 	},
+		{
+		front : "img/front6.jpg",
+		back: "img/back.jpg",
+		name: "f6"
+	},
 ];
 var current=null;
-
-
+var yes=$("#true")[0];
+var no=$("#wrong")[0];
+var click=$("#button")[0];
+var dem=0;
+var good=$("#congra")[0];
 function shuffle(array) {
     var currentIndex = array.length, temporaryValue, randomIndex;
     while (0 !== currentIndex) {
@@ -42,6 +50,7 @@ function shuffle(array) {
 
 
 function thanh(card){
+	click.play();
 	$(card).toggleClass("magic1");
 	$('.magic1').css('pointer-events','none');
 	if(!current){
@@ -52,19 +61,26 @@ function thanh(card){
 			setTimeout(function(){
 			current.toggleClass("magic1");
 			$(card).toggleClass("magic1");
+			no.play();
 			current=null;
 			$('.magic').css('pointer-events','auto')
-			},500);
+
+			},300);
 
 			
 
 		}
 		else{
+			dem++;
 			setTimeout(function(){
+				yes.play();
 				current.css('opacity','0');
 				$(card).css('opacity','0');
 				current=null;
 			},300)
+			if(dem==6){
+				good.play();
+			}
 			
 		}
 

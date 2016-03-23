@@ -34,8 +34,11 @@ var current=null;
 var yes=$("#true")[0];
 var no=$("#wrong")[0];
 var click=$("#button")[0];
+var music=$("#music")[0];
 var dem=0;
 var good=$("#congra")[0];
+var lose=$("#lose")[0];
+var remainingTime= 30;
 function shuffle(array) {
     var currentIndex = array.length, temporaryValue, randomIndex;
     while (0 !== currentIndex) {
@@ -47,15 +50,12 @@ function shuffle(array) {
   }
   return array;
 };
-
-
 function thanh(card){
 	click.play();
 	$(card).toggleClass("magic1");
 	$('.magic1').css('pointer-events','none');
 	if(!current){
-		current = $(card);
-		
+		current = $(card);		
 	}else {
 		if(current.attr('data-name')!= $(card).attr('data-name')){
 			setTimeout(function(){
@@ -64,11 +64,7 @@ function thanh(card){
 			no.play();
 			current=null;
 			$('.magic').css('pointer-events','auto')
-
-			},300);
-
-			
-
+			},300);			
 		}
 		else{
 			dem++;
@@ -79,20 +75,57 @@ function thanh(card){
 				current=null;
 			},300)
 			if(dem==6){
-				good.play();
+			music.pause();
+			good.play();
+			$('.magic').remove();
+			$('.magic1').remove();
+			$('h1').replaceWith('<h1>Bạn đã thắng, chơi lại nhé</h1>');
+			$('#all1').css('opacity','1');
+			$('progress').css('opacity','0');
+			
+
 			}
 			
 		}
 
 	}
 }
-$(function(){
-	card=card.concat(card);
+card=card.concat(card);
+var main=function(){
+	$(function(){
+	
 	for(var i=0; i<card.length; i++){
 	$("#card").append('<div class="magic" data-name="'+ card[i].name +'"  onclick="thanh(this)" id="'+ i+ '"</div>');
 	$("#"+i).append('<img id="front" src="'+ card[i].back +'" />');
 	$("#"+i).append('<img id="back" src="' + card[i].front +'"/>');
-	
 }
 });	
 shuffle(card);
+var run= setInterval(function(){
+	$('progress').attr('value',remainingTime);
+	remainingTime--;
+	if(remainingTime==0){
+		clearInterval(run);
+		$('progress').attr('value',remainingTime);
+		$('.magic').remove();
+		$('.magic1').remove();
+		music.pause();
+		lose.play();
+		$('h1').replaceWith('<h1>Bạn đã thua, chơi lại nhé</h1>');
+		$('#all1').css('opacity','1');
+		$('progress').css('opacity','0');
+
+	}
+},1000)
+};
+	$('.play-button').click(function(){
+	$('#all1').css('opacity','0');
+	$('progress').css('opacity','1');
+	
+	congra.pause();
+	lose.pause();
+	music.play();
+	main();
+	remainingTime= 20;
+})
+

@@ -2,7 +2,7 @@
 <head>
 	<title>Memory Card</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<audio autoplay>
+	<audio id="music">
    	 <source src="audio/nhacnen.mp3" type="audio/mpeg">
 	</audio>
 	<audio id="button">
@@ -17,10 +17,20 @@
 	<audio id="congra">
 		<source src="audio/votay.mp3" type="audio/mpeg">
 	</audio>
-
+	<audio id="lose">
+		<source src="audio/lose.mp3" type="audio/mpeg">
+	</audio>
+	<meta charset="UTF-8">
 </head>
 <body>
 <div class="wrap">
+	<progress value="20" max="20" min="0"></progress>
+	<div id="all1">
+		<h1>Click this button to play</h1>
+		<div class="play-button">
+		</div>
+	</div>
+	
 	<div class="all">
 		<div id="card">
 		</div>

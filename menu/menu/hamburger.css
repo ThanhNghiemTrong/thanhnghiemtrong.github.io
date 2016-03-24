@@ -1,3 +1,7 @@
+@font-face{
+	font-family: adika;
+	src: url('./AndikaNewBasic-I.ttf') format('truetype');
+}
 @keyframes title {
     0%  {background-color: #EF7126; color: #F9E559;}
     25%  {background-color: #6F3662; color: #FFFFFF;}
@@ -20,6 +24,7 @@ body{
 .all{
 	max-width: 1000px;
 	margin:auto;
+	font-family: adika;
 
 }
 h1{
@@ -56,7 +61,7 @@ h1{
 .menu ul li{
     list-style: none;
     display:inline-block;
-    font-size: 23px;
+    font-size: 20px;
     padding-right: 20px;
     padding-top: 10px;
     padding-bottom: 10px;

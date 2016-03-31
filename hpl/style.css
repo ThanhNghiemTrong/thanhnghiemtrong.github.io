@@ -1,0 +1,132 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	 font-family: 'Roboto', sans-serif;
+}
+body{
+	position: relative;
+}
+.header{
+	position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999999;
+    padding-bottom: 14px;
+    background-color: rgba(255, 255, 255, 0.9);
+}
+.menu-header{
+	border-bottom-width: 1px;
+    border-bottom-style: solid;
+    width: 1200px;
+    margin: 0 auto;
+    max-width: 100%;
+    padding-top: 10px;
+    padding-bottom: 0.5%;
+    border-bottom-color: #691267;
+
+}
+.banner img{
+	width: 1920px;
+	max-width: 100%;
+	
+}
+.menu{
+	display: -webkit-inline-box;
+	vertical-align: middle;
+	    margin-top: 0;
+	    text-align: right;
+}
+.menu a{
+	
+    display: block;
+    margin: 0 48px;
+    color: #414141;
+    font-size: 18px;
+   
+    font-weight: 300;
+    white-space: nowrap;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1) 0s
+}
+.logo-company{
+	    padding-top: 10px;
+}
+#phone{
+	 top: 7%;
+    position: absolute;
+    left: 8%;
+}
+#phone a{
+	color:#8a0187
+}
+#search{
+	width: 13%;
+    position: absolute;
+    top: 0;
+    right: 11%;
+}
+form{
+	width: 88%
+}
+form button{
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 37%;
+    right: 0%
+}
+.bxslider img{
+	height: 646px;
+	max-height: 60%;
+}
+.bxslider {
+	position: absolute;
+	border: none;
+}
+.main-body{
+	max-width: 60%;
+	padding: auto;
+	margin: auto;
+}
+.pagination li {
+  display:inline-block;
+  padding:5px;
+}
+h4{
+	padding-bottom: 10px;
+	border-bottom-style: groove;
+}
+ul li button{
+	padding: 3px;
+    color: white;
+    background-color: #8a0187;
+}
+.footer{
+	width: 100%;
+	float: left;
+	background-color:  #eaeaea;
+	background-size: 100% 100%;
+}
+.main-footer{
+	float: left;
+	
+	padding: auto;
+	margin: auto;
+	
+}
+.footer-logo{
+	float: left;
+	width: 50%;
+	margin-top: 51px;
+	padding-left: 20%;
+  
+}
+.footer-logo h2{
+	color: #691267;
+    font-size: 18px;
+}
+.footer-logo a,.footer-logo h3 {
+	font-size: 16px;
+}

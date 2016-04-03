@@ -6725,70 +6725,33 @@ div.product-item > a:nth-child(3) {
     padding-bottom: 10px;
 
   }
-  .other-information ul li, .main-information ul li{
-    float: left;
-    margin-top: 20px;
-    font-size: 16px;
-  }
-  .other-information ul li img{
-    float: left;
-    width: 85px;
-    height: 88px;
-    }
-  .main-information ul li p,h5{
-    padding-left: 340px;
-  }
-  .main-information .date-time{
-     padding-left: 340px;
-  }
-  .main-information ul li img{
-    float: left;
-    width: 312px;
-    height: 246px;
-
-
-  }
-  .main-information{
-    float: left;
-    width: 67%;
-    margin-left: 50px;
-  }
-  .thanh-footer{
-    width: 100%;
-    float: left;
-  }
-}
-@media(min-width: 1366px){
-   .other-information{
-    width: 28%;
-    float: left;
-  }
-  .other-information ul li p{
-    padding-left: 90px;
-    padding-bottom: 10px;
-
-  }
 
   .other-information ul li, .main-information ul li{
     float: left;
     margin-top: 20px;
     font-size: 16px;
   }
-  .other-information ul li img{
+  .other-information .img-inform{
     float: left;
     width: 85px;
     height: 88px;
-    }
+    overflow: hidden;
+    -moz-transition:-moz-transform 1s ease; 
+    -webkit-transition:-webkit-transform 1s ease; 
+    -o-transition:-o-transform 1s ease;
+  }
   .main-information ul li p,h5{
     padding-left: 340px;
   }
   
-  .main-information ul li img{
+  .main-information .img-inform{
     float: left;
     width: 312px;
     height: 246px;
-
-
+    overflow: hidden;
+    -moz-transition:-moz-transform 0.5s ; 
+    -webkit-transition:-webkit-transform 0.5s; 
+    -o-transition:-o-transform 0.5s;
   }
   .main-information{
     float: left;
@@ -6799,6 +6762,72 @@ div.product-item > a:nth-child(3) {
     width: 100%;
     float: left;
   }
+  .img-inform img{
+    -moz-transition:-moz-transform 0.5s linear ; 
+    -webkit-transition:-webkit-transform 0.5s linear; 
+    -o-transition:-o-transform 0.5s linear;
+  }
+  .img-inform:hover img{
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+}
+@media(min-width: 1366px){
+ .other-information{
+  width: 28%;
+  float: left;
+}
+.other-information ul li p{
+  padding-left: 90px;
+  padding-bottom: 10px;
+
+}
+
+.other-information ul li, .main-information ul li{
+  float: left;
+  margin-top: 20px;
+  font-size: 16px;
+}
+.other-information .img-inform{
+  float: left;
+  width: 85px;
+  height: 88px;
+  overflow: hidden;
+  -moz-transition:-moz-transform 1s ease; 
+  -webkit-transition:-webkit-transform 1s ease; 
+  -o-transition:-o-transform 1s ease;
+}
+.main-information ul li p,h5{
+  padding-left: 340px;
+}
+
+.main-information .img-inform{
+  float: left;
+  width: 312px;
+  height: 246px;
+  overflow: hidden;
+  -moz-transition:-moz-transform 0.5s ; 
+  -webkit-transition:-webkit-transform 0.5s; 
+  -o-transition:-o-transform 0.5s;
+}
+.main-information{
+  float: left;
+  width: 67%;
+  margin-left: 50px;
+}
+.thanh-footer{
+  width: 100%;
+  float: left;
+}
+.img-inform img{
+  -moz-transition:-moz-transform 0.5s linear ; 
+  -webkit-transition:-webkit-transform 0.5s linear; 
+  -o-transition:-o-transform 0.5s linear;
+}
+.img-inform:hover img{
+  transform: scale(1.2);
+  opacity: 0.8;
+}
 }
 @media (max-width: 1180px) {
   .header ul.header-menu li > a {
@@ -6838,8 +6867,8 @@ div.product-item > a:nth-child(3) {
   .main-banner .main-banner-text .container > div {
     padding-top: 10.615%;
   }
-   .other-information{
-    width: 28%;
+  .other-information{
+    width: 32%;
     float: left;
   }
   .other-information ul li p{
@@ -6847,36 +6876,53 @@ div.product-item > a:nth-child(3) {
     padding-bottom: 10px;
 
   }
- 
+  .main-information .date-time{
+    padding-left: 0px !important;
+  }
   .other-information ul li, .main-information ul li{
     float: left;
     margin-top: 20px;
     font-size: 16px;
   }
-  .other-information ul li img{
+  .other-information .img-inform{
     float: left;
     width: 85px;
     height: 88px;
-    }
-  .main-information ul li p,h5{
-    padding-left: 340px;
+    overflow: hidden;
+    -moz-transition:-moz-transform 1s ease; 
+    -webkit-transition:-webkit-transform 1s ease; 
+    -o-transition:-o-transform 1s ease;
   }
+  .main-information .img-inform img{
+    width: 100%;
+    max-height: 100%;
+  }
+  .main-information .img-inform{
 
-  .main-information ul li img{
-    float: left;
-    width: 312px;
+    width: 100%;
     height: 246px;
-
-
+    overflow: hidden;
+    -moz-transition:-moz-transform 0.5s ; 
+    -webkit-transition:-webkit-transform 0.5s; 
+    -o-transition:-o-transform 0.5s;
   }
   .main-information{
     float: left;
-    width: 66%;
-    margin-left: 50px;
+    width: 65%;
+    margin-left: 20px;
   }
   .thanh-footer{
     width: 100%;
     float: left;
+  }
+  .img-inform img{
+    -moz-transition:-moz-transform 0.5s linear ; 
+    -webkit-transition:-webkit-transform 0.5s linear; 
+    -o-transition:-o-transform 0.5s linear;
+  }
+  .img-inform:hover img{
+    transform: scale(1.2);
+    opacity: 0.8;
   }
 }
 @media (max-width: 1023px) {
@@ -7077,6 +7123,7 @@ div.product-item > a:nth-child(3) {
     position: static;
     margin-top: 15px;
   }
+
 }
 @media (max-width: 768px) {
   .header-banner p.header-banner-text {
@@ -7099,6 +7146,66 @@ div.product-item > a:nth-child(3) {
   .main-banner > img {
     max-width: none;
     max-height: 356.5px;
+  }
+    .other-information{
+    width: 100%;
+    float: left;
+  }
+  .other-information ul li p{
+    padding-left: 90px;
+    padding-bottom: 10px;
+
+  }
+  .main-information .date-time{
+    padding-left: 0px !important;
+  }
+  .other-information ul li, .main-information ul li{
+    float: left;
+    margin-top: 20px;
+    font-size: 16px;
+  }
+   .other-information .img-inform{
+    float: left;
+   
+    overflow: hidden;
+      -moz-transition:-moz-transform 1s ease; 
+-webkit-transition:-webkit-transform 1s ease; 
+-o-transition:-o-transform 1s ease;
+    }
+    .other-information .img-inform img{
+      max-width: 100%;
+      float: left;
+    }
+    .main-information .img-inform img{
+      width: 100%;
+      max-height: 100%;
+    }
+ .main-information .img-inform{
+    
+    width: 100%;
+    height: 246px;
+    overflow: hidden;
+  -moz-transition:-moz-transform 0.5s ; 
+-webkit-transition:-webkit-transform 0.5s; 
+-o-transition:-o-transform 0.5s;
+  }
+  .main-information{
+    float: left;
+    width: 100%;
+    margin-left: 0;
+  }
+  .thanh-footer{
+    width: 100%;
+    float: left;
+  }
+  .img-inform img{
+      -moz-transition:-moz-transform 0.5s linear ; 
+-webkit-transition:-webkit-transform 0.5s linear; 
+-o-transition:-o-transform 0.5s linear;
+  }
+  .img-inform:hover img{
+    transform: scale(1.2);
+    opacity: 0.8;
   }
 }
 @media (max-width: 640px) {
@@ -7229,10 +7336,10 @@ ul li button{
 .title a, .title span{
   color: #a3a3a3;
 }
-  .information{
-    float: left;
-    display: inline-block;
-  }
+.information{
+  float: left;
+  display: inline-block;
+}
 .information .other-information .main-information{
   float: left;
   margin-top: 5px;
@@ -7242,21 +7349,21 @@ ul li button{
 }
 .other-information button, .main-information button{
   -moz-transition:-moz-transform 0.5s ; 
--webkit-transition:-webkit-transform 0.5s; 
--o-transition:-o-transform 0.5s;
-overflow: hidden;
+  -webkit-transition:-webkit-transform 0.5s; 
+  -o-transition:-o-transform 0.5s;
+  overflow: hidden;
 }
 
 
-  .other-information ul li, .main-information ul li{
-    margin-top: 20px;
-    font-size: 16px;
-    overflow: hidden;
-    line-height: 1.4;
+.other-information ul li, .main-information ul li{
+  margin-top: 20px;
+  font-size: 16px;
+  overflow: hidden;
+  line-height: 1.4;
 
 
 
-  }
+}
 
 .other-information ul li p{
   color: black;
@@ -7282,21 +7389,15 @@ h5{
   margin-right: 30px;
   float: left;
 }
- .other-information .date-time{
-    padding-left: 90px;
-  }
+.other-information .date-time{
+  padding-left: 90px;
+}
 #date{
   font-size: 14px !important;
   padding-left: 0 !important;
   color: #949494;
   float: left;
 }
- .main-information .date-time{
-     padding-left: 340px;
-  }
-.img:hover img{
-  transform: scale(1.2);
-}
-.img:hover{
-  overflow: hidden;
+.main-information .date-time{
+ padding-left: 340px;
 }

@@ -25,16 +25,20 @@
   color: #8a0187;
   text-transform: uppercase;
 }
-ul li button{
+ul li .button{
   padding:  3px 8px 3px 8px;
   color: white;
   background-color: #8a0187;
+  float: right;
 }
 .title{
   padding: 0;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 
+}
+.pagination{
+  float: right !important;
 }
 .title a, .title span{
   color: #a3a3a3;
@@ -50,24 +54,14 @@ ul li button{
   padding: 0;
 
 }
-.other-information button, .main-information button{
-  -moz-transition:-moz-transform 0.5s ; 
-  -webkit-transition:-webkit-transform 0.5s; 
-  -o-transition:-o-transform 0.5s;
-  overflow: hidden;
-}
-
 
 .other-information ul li, .main-information ul li{
   margin-top: 20px;
   font-size: 16px;
   overflow: hidden;
   line-height: 1.4;
-
-
-
+  float: left;
 }
-
 .other-information ul li p{
   color: black;
   padding-bottom: 10px;
@@ -80,11 +74,6 @@ h5{
 .main-information ul li p{
   color: #949494;
   padding-bottom: 10px;
-}
-.main-information button{
-  float: right;
-  margin-top: 5px;
-  margin-bottom: 5px;
 }
 .calendar{
   width: 14px !important;
@@ -104,7 +93,7 @@ h5{
 .main-information .date-time{
  padding-left: 340px;
 }
- .other-information{
+.other-information{
   width: 28%;
   float: left;
 }
@@ -113,61 +102,46 @@ h5{
   padding-bottom: 10px;
 
 }
-.other-information{
-    width: 28%;
-    float: left;
-  }
-  .other-information ul li p{
-    padding-left: 90px;
-    padding-bottom: 10px;
+.other-information .img-inform{
+  float: left;
+  width: 85px;
+  height: 88px;
+  overflow: hidden;
+  -moz-transition:-moz-transform 1s ease; 
+  -webkit-transition:-webkit-transform 1s ease; 
+  -o-transition:-o-transform 1s ease;
+}
+.main-information ul li p,h5{
+  padding-left: 340px;
+}
 
-  }
-
-  .other-information ul li, .main-information ul li{
-    float: left;
-    margin-top: 20px;
-    font-size: 16px;
-  }
-  .other-information .img-inform{
-    float: left;
-    width: 85px;
-    height: 88px;
-    overflow: hidden;
-    -moz-transition:-moz-transform 1s ease; 
-    -webkit-transition:-webkit-transform 1s ease; 
-    -o-transition:-o-transform 1s ease;
-  }
-  .main-information ul li p,h5{
-    padding-left: 340px;
-  }
+.main-information .img-inform{
+  float: left;
+  width: 312px;
+  height: 246px;
+  overflow: hidden;
+  -moz-transition:-moz-transform 0.5s ; 
+  -webkit-transition:-webkit-transform 0.5s; 
+  -o-transition:-o-transform 0.5s;
+}
+.main-information{
+  float: right;
+  width: 67%;
   
-  .main-information .img-inform{
-    float: left;
-    width: 312px;
-    height: 246px;
-    overflow: hidden;
-    -moz-transition:-moz-transform 0.5s ; 
-    -webkit-transition:-webkit-transform 0.5s; 
-    -o-transition:-o-transform 0.5s;
-  }
-  .main-information{
-    float: left;
-    width: 67%;
-    margin-left: 50px;
-  }
-  .thanh-footer{
-    width: 100%;
-    float: left;
-  }
-  .img-inform img{
-    -moz-transition:-moz-transform 0.5s linear ; 
-    -webkit-transition:-webkit-transform 0.5s linear; 
-    -o-transition:-o-transform 0.5s linear;
-  }
-  .img-inform:hover img{
-    transform: scale(1.2);
-    opacity: 0.8;
-  }
+}
+.thanh-footer{
+  width: 100%;
+  float: left;
+}
+.img-inform img{
+  -moz-transition:-moz-transform 0.5s linear ; 
+  -webkit-transition:-webkit-transform 0.5s linear; 
+  -o-transition:-o-transform 0.5s linear;
+}
+.img-inform:hover img{
+  transform: scale(1.2);
+  opacity: 0.8;
+}
 .other-information ul li, .main-information ul li{
   float: left;
   margin-top: 20px;
@@ -196,9 +170,8 @@ h5{
   -o-transition:-o-transform 0.5s;
 }
 .main-information{
-  float: left;
+  float: right;
   width: 67%;
-  margin-left: 50px;
 }
 .thanh-footer{
   width: 100%;
@@ -213,7 +186,66 @@ h5{
   transform: scale(1.2);
   opacity: 0.8;
 }
-
+.bx-wrapper .bx-pager,
+.bx-wrapper .bx-controls-auto {
+  position: absolute !important;
+  bottom: 30px !important;
+  width: 100% !important;
+}
+.bx-wrapper .bx-viewport{
+  left: 0 !important;
+  border: none !important;
+     -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+}
+.bx-wrapper .bx-pager.bx-default-pager a{
+  width: 19px !important;
+  height: 19px !important;
+  border-radius: 50% !important;
+  border: 1px solid #fff !important;
+  background: transparent !important;
+}
+.bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active{
+     background-color: #8a0187 !important;
+}
+.text-banner{
+  background: transparent;
+  position: absolute;
+  bottom: 13%;
+  color: white;
+  font-size: 90%;
+  width: 80%;
+  padding: 5px;
+  margin-left: 10%;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.35)
+}
+.text-banner p{
+  padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 20px;
+}
+.text-banner h2{
+  font-size: 30px;
+  font-weight: 400;
+}
+.bx-wrapper .bx-caption {
+  bottom: 20% !important;
+  text-align: center !important;
+  width: 80% !important;
+  font-size: 30px !important;
+  margin-left:10% !important;
+      background: rgba(0, 0, 0, 0.35) !important;
+}
+.bx-wrapper{
+  margin-bottom: 10px !important;
+}
+.pagination .active a{
+  color: #8a0187;
+}
+.pagination .page{
+  color: #606060;
+}
 @media (max-width: 1180px) {
   .other-information{
     width: 32%;
@@ -255,9 +287,8 @@ h5{
     -o-transition:-o-transform 0.5s;
   }
   .main-information{
-    float: left;
+    float: right;
     width: 65%;
-    margin-left: 20px;
   }
   .thanh-footer{
     width: 100%;
@@ -313,7 +344,7 @@ h5{
     max-height: 100%;
   }
   .main-information .img-inform{
-    
+
     width: 100%;
     height: 246px;
     overflow: hidden;
@@ -339,13 +370,23 @@ h5{
     transform: scale(1.2);
     opacity: 0.8;
   }
-   #test-list .list {
+  #test-list .list {
     display: inline-block !important;
   }
 
 }
 @media (max-width: 640px) {
-      #test-list .list {
+  #test-list .list {
     display: inline-block !important;
+  }
+  .text-banner p{
+    display: none;
+  }
+  .text-banner{
+    bottom: 20%;
+  }
+  .text-banner h2{
+    font-size: 23px;
+    font-weight: 300px;
   }
 }

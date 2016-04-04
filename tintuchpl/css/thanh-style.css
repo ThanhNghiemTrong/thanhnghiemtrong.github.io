@@ -21,7 +21,7 @@
 
 }
 .caption p{
-  font-size: 19px;
+  font-size: 30px;
   color: #8a0187;
   text-transform: uppercase;
 }
@@ -245,6 +245,28 @@ h5{
 }
 .pagination .page{
   color: #606060;
+}
+.lorem-text{
+  line-height: 1.5;
+}
+.lorem-text p{
+  color: #606060;
+  font-size: 18px;
+
+}
+.lorem-text h1{
+  font-weight: 400;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.lorem-text img{
+  width: 80%;
+  height: auto;
+  max-width: 705px;
+  max-height: 384px;
+  margin-left: 10%;
+  margin-bottom: 44px;
+  margin-top: 44px;
 }
 @media (max-width: 1180px) {
   .other-information{

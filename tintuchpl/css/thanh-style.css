@@ -296,6 +296,8 @@ h5{
   float: left;
   margin: auto;
   padding: auto;
+  padding-right: 2%;
+  padding-left: 5%;
 }
 .contact-map{
   float: left;
@@ -307,10 +309,9 @@ h5{
 .contact-main input{
   float: right;
   background-color: #eff1f4;
-  width: 80%;
-  max-width: 447px;
+  width: 100%;
+ 
   margin-bottom: 5%;
-  margin-right: 10%;
   padding: 15px;
   font-size: 25px;
   border-width: 1px;

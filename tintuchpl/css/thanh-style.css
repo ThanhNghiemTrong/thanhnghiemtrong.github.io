@@ -246,15 +246,15 @@ h5{
 .pagination .page{
   color: #606060;
 }
-.lorem-text{
+.lorem-text, .about-text{
   line-height: 1.5;
 }
-.lorem-text p{
+.lorem-text p, .about-text p{
   color: #606060;
   font-size: 18px;
 
 }
-.lorem-text h1{
+.lorem-text h1, .about-text h1{
   font-weight: 400;
   padding-top: 20px;
   padding-bottom: 20px;
@@ -360,6 +360,62 @@ p.dublin {
   max-height: 364px;
   margin-top: 47%;
   margin-left: 10%;
+}
+.about-text{
+  float: left;
+}
+.about-text h1{
+  font-size: 26px;
+
+}
+
+.about-onlytext{
+      width: 70%;
+    float: left;
+    padding-right: 5%;
+}
+.img-about-text img{
+  width: 175px;
+  max-width: 25%;
+  height: 120px;
+  max-height: auto;
+  margin-right: 9%;
+
+}
+
+.img-right{
+  padding-top: 20px;
+  width: 30%;
+  float: left;
+}
+.img-right img{
+  width: 100%;
+  max-width: 374px;
+  height: auto;
+  margin-bottom: 10%;
+}
+.note{
+  float: left;
+  width: 100%;
+  border-bottom-style: dotted;
+  border-bottom-width: thin;
+  display: inline-flex;
+  padding-bottom: 15px;
+  margin-bottom: 10%;
+}
+.note img{
+     float: left;
+    padding-right: 1%;
+    width: 68px;
+    height: 64px;
+    margin-right: 4%;
+    margin-top: 10px;
+}
+.note p{
+     padding-left: 29px;
+    float: left;
+    border-left-style: dotted;
+    border-left-width: thin;
 }
 @media (max-width: 1180px) {
   .other-information{
@@ -519,6 +575,21 @@ p.dublin {
     top: 8%;
     left: 14%;
     width: 65%;
+    height: auto;
+  }
+  .about-onlytext{
+    width: 100%;
+    padding-right: 0;
+  }
+  .img-right{
+    width: 100%;
+    float: left;
+    
+  }
+  .img-right img{
+    width: 30%;
+    float: left;
+    margin-right: 3%;
     height: auto;
   }
 }

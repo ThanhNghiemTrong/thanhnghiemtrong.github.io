@@ -643,6 +643,15 @@ p.dublin {
         width: 100%;
   }
 }
+@media( max-width: 375px){
+  .about-text h1 {
+    font-size: 20px;
+}
+  .about-text p {
+    color: #606060;
+    font-size: 13px;
+}
+}
 @media(max-width: 320px){
   .map-text p{
     font-size: 11px;

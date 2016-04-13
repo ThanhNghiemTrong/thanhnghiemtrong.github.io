@@ -14,11 +14,24 @@
     rel='stylesheet' type='text/css'>
     <link type="text/css" rel="stylesheet" href="asset/css/jquery.bxslider.css"/>
     <link type="text/css" rel="stylesheet" href="asset/css/animate.min.css"/>
+       <link rel="stylesheet" href="asset/fancybox/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    <link rel="stylesheet" href="asset/fancybox/source/helpers/jquery.fancybox-buttons.css?v=1.0.5" type="text/css" media="screen" />
+    <link rel="stylesheet" href="asset/fancybox/source/helpers/jquery.fancybox-thumbs.css?v=1.0.7" type="text/css" media="screen" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
     <link type="text/css" rel="stylesheet" href="asset/css/style.css"/>
     <link type="text/css" rel="stylesheet" href="asset/css/customize.css"/>
     <link rel="stylesheet" type="text/css" href="asset/css/thanh-style.css">
+ 
     <script type='text/javascript' src="asset/js/jquery.min.js"></script>
+    <script type="text/javascript" src="asset/fancybox/source/helpers/jquery.fancybox-buttons.js?v=1.0.5"></script>
+    <script type="text/javascript" src="asset/fancybox/source/helpers/jquery.fancybox-media.js?v=1.0.6"></script>
+
+
+<script type="text/javascript" src="asset/fancybox/source/helpers/jquery.fancybox-thumbs.js?v=1.0.7"></script>
+    <script type="text/javascript" src="asset/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+    
+
+    <script type="text/javascript" src="asset/fancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
     <script type='text/javascript' src="asset/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="asset/js/jquery.bxslider.min.js"></script>
     <script type='text/javascript' src="asset/js/style.js"></script>
@@ -392,11 +405,14 @@
                                                                                            </div>
                                                                                            <div class="main-media" >
                                                                                             <div class="img-media">
-                                                                                              <a href="#"><img src="images/upload/thuvien_img1.jpg"></a>
+                                                                                          
+                                                                                           <img src="images/upload/thuvien_img1.jpg"/>
+                                                                                    
                                                                                                <div class="span">
-                                                                                                   <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-                                                                                                  <p>Thanh niên PVEP phải có khát vọng</p>
-                                                                                               </div>
+                                                                                                    <a class="fancybox" rel="gallery1" href="images/upload/thuvien_popup1.jpg" title="PVEP đón dòng dầu đầu tiên mỏ Bir SeBa">
+                                                                                                    <i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                                                                                                  <a href=""><p>Thanh niên PVEP phải có khát vọng</p>
+                                                                                               </div></a>
                                                                                                   
                                                                                              
                                                                                               </div>
@@ -540,5 +556,26 @@
                                                                         </div>                                                                    
                                                                         </div>
                                                                     </footer>
+<script type="text/javascript">
+
+$(document).ready(function() {
+    $(".fancybox").fancybox({
+
+        openEffect  : 'none',
+        closeEffect : 'none',
+        padding : 5,
+        afterLoad: function() {
+
+        this.title =  this.title + '<br><p style="color:#959595"> Lượt xem : 150 ' + ' | Gửi lúc: 05/04/2016  </p> ' ;
+         },
+       helpers : {
+            title :  {
+                type : 'inside',
+                
+            }
+        }
+    });
+});
+</script>
 </body>
 </html>

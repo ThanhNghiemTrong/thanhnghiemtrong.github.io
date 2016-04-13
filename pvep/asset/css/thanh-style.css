@@ -107,6 +107,11 @@ font-size: 20px;
 .span:hover{
 	opacity :1;
 }
+.fancybox-opened .fancybox-title {
+    color: #0083c7 !important;
+    padding-left: 10px !important;
+    font-weight: bold !important;
+}
 @media(max-width: 768px){
 	.main-media img {
     width: 32.5%;

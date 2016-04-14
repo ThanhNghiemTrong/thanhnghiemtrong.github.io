@@ -99,10 +99,9 @@ select.desktopDropDown::-ms-expand {
 }
 .main-media .span i{
 	    text-align: center;
-    padding-left: 46%;
-    font-size: 40px;
-    font-size: 30px;
-    padding-top: 20%;
+    padding-left: 38%;
+    font-size: 60px;
+    padding-top: 15%;
 }
 .img-media{
     width: 33.333333%;
@@ -135,6 +134,9 @@ select.desktopDropDown::-ms-expand {
     padding-bottom: 10px;
     border-radius: 25px;
 }
+    .main-media .span i{
+            padding-top: 5%;
+    }
 }
 @media(max-width: 640px){
 	.select i {

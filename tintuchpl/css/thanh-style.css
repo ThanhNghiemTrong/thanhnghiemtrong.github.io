@@ -207,6 +207,7 @@ h5{
 }
 .bx-wrapper .bx-pager.bx-default-pager a:hover, .bx-wrapper .bx-pager.bx-default-pager a.active{
  background-color: #8a0187 !important;
+ display: none;
 }
 .text-banner{
   background: transparent;
@@ -285,6 +286,9 @@ h5{
   float: right;
   border-radius: 0;
 }
+#contact-button:hover{
+  cursor: pointer;
+}
 .contact-main{
   width: 100%;
   background-color: #e7e8ea;
@@ -319,6 +323,7 @@ h5{
   border-color: #d0d0d0;
   border-radius: 10px;
 }
+
 .contact-main #message {
   padding-bottom: 10%;
 }
@@ -383,10 +388,11 @@ p.dublin {
   width: 30%;
   float: left;
 }
-.img-right img{
+.img-right img, iframe{
   width: 100%;
   max-width: 374px;
   height: auto;
+  max-height: 100%;
   margin-bottom: 10%;
 }
 .note{
@@ -634,7 +640,6 @@ p.dublin {
   }
   .contact-map #img1{
       margin-left: -8%;
-    margin-top: 48%;
         width: 100%;
   }
 }

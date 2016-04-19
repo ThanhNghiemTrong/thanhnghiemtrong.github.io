@@ -40,6 +40,7 @@ font-size: 20px;
     top: 37px;
     font-size: 16px;
     color: #0083c7;
+    cursor: pointer;
     
 }
 .header-main-information{
@@ -103,7 +104,7 @@ select.desktopDropDown::-ms-expand {
     font-size: 60px;
     padding-top: 15%;
 }
-.img-media{
+.img-media, .video{
     width: 33.333333%;
     float: left;
     position: relative;
@@ -111,17 +112,23 @@ select.desktopDropDown::-ms-expand {
         padding-right: 3px;
 
 }
-.img-media img{
+.img-media img, iframe{
 	max-width: 100%;
     height: auto;
 }
 .span:hover {
 	opacity :1;
 }
+.main-media1{
+    opacity: 0;
+}
 .fancybox-opened .fancybox-title {
     color: #0083c7 !important;
     padding-left: 10px !important;
     font-weight: bold !important;
+}
+iframe{
+    width: 99%;
 }
 @media(max-width: 768px){
 
@@ -157,10 +164,10 @@ select.desktopDropDown::-ms-expand {
 }
 }
 @media(max-width: 500px){
-    .img-media{
+    .img-media, .video{
         width: 100%;
     }
-    .img-media img {
+    .img-media img, iframe {
         width: 100%;
     }
 	.header-main-information select {

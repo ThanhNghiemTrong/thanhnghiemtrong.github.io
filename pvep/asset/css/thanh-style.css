@@ -82,7 +82,7 @@ select.desktopDropDown::-ms-expand {
 }
 .main-media .span{
     position: absolute;
-    left: 3%;
+    left: 2%;
     top: 3%;
     bottom: 3%;
     right: 3%;
@@ -121,6 +121,10 @@ select.desktopDropDown::-ms-expand {
 }
 .main-media1{
     opacity: 0;
+}
+.fancybox{
+    height: 100%;
+    cursor: pointer;
 }
 .fancybox-opened .fancybox-title {
     color: #0083c7 !important;

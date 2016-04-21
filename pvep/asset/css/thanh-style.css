@@ -27,7 +27,7 @@ font-size: 20px;
 }
 .header-main-information input{
 	height: 36px;
-	width: 200px;
+	width: 30%;
 	padding-left: 10px;
 	position: absolute;
 	right: 0;
@@ -176,6 +176,7 @@ iframe{
     }
 	.header-main-information select {
 		width: 90px;
+        margin-bottom: 5px;
 	}
 	.select i {
     font-size: 23px;
@@ -188,5 +189,6 @@ iframe{
 }
 .header-main-information input {
     top: 31px;
+    width: 60%;
 }
 

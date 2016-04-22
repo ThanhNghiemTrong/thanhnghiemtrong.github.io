@@ -44,8 +44,7 @@ ul li .button{
   color: #a3a3a3;
 }
 .information{
-  float: left;
-  display: inline-block;
+  overflow: hidden !important;
 }
 .information .other-information .main-information{
   float: left;
